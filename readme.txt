@@ -12,3 +12,4 @@ git reset --hard "commit id"；
 
 git is a distributed version control system.
 git is free software distributed under the GPL.
+say something
