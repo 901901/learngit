@@ -1,4 +1,7 @@
-﻿创建版本库
+﻿直接在命令行窗口编辑文件：vi fileName
+处理完之后： 1.点击Esc键退出编辑模式； 2.输入 ：wq
+
+创建版本库
 	$mkdir gitRepositoryName (创建空目录)
 	$cd gitRepositoryName
 	$pwd (显示当期目录)
@@ -16,7 +19,7 @@
 	git diff；
 
 查看历史记录：
-	git log；git log --pretty=oneline；
+	git log 或者 git log --pretty=oneline；
 
 回退以前版本：HEAD是指向当前分支该版本的指针、回退时是改变HEAD指向
 未关闭当前窗口
@@ -42,20 +45,30 @@
 
 从远程库克隆：
 	git clone git@github.com:githubName/repositoryName.git
-	
+	git自动把本地的master分支和远程的master分支对应、远程仓库默认origin；
+	查看远程库：git remote 或者 git remote -v 显示更详细信息
+
 使用分支：不同人在不同分支完成某个任务合并后再删除分支、过程更安全
 	查看分支：git branch
-	创建分支：git branch branchName // 新建指针branchName
+	创建分支：git branch branchName // 新建指针branchName dev开发分支
 	切换分支：git checkout branchName 或者 git switch branchName // 切换HEAD到分支branchName
 	创建+切换分支：git checkout -b branchName 或者 git switch -c branchName
 	合并某分支到当前分支：git merge branchName
 	查看分支合并图：git log --graph
 	删除分支：git branch -d branchName
+	强行删除分支：git branch -D branchName
 git无法自动合并时要先解决冲突、再提交、合并完成；
 解决冲突：把git合并失败的的文件手动编辑再提交
 
-直接在命令行窗口编辑文件：vi fileName
-处理完之后： 1.点击Esc键退出编辑模式； 2.输入 ：wq
+bug分支：修复bug时是通过创建新的bug分支进行修复、然后合并删除；
+手头有工作未完成时先把现场保存：git stash；
+修复后在查看保存的工作现场：git stash list；
+然后恢复：git stash pop 或者 git stash apply stash@{0}，然后删除stash：git stash drop
+在master分支上修复的bug合并到dev分支、用git cherry-pick commitId
+
+Feature分支：添加新功能新建feature分支
+
+多人协作：
 
 
 
