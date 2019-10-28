@@ -11,7 +11,7 @@
 查看历史记录：
 	git log；git log --pretty=oneline；
 
-回退以前版本：HEAD是指向当前版本的指针、回退时是改变HEAD指向
+回退以前版本：HEAD是指向当前分支该版本的指针、回退时是改变HEAD指向
 未关闭当前窗口
 	git reset --hard HEAD^(HEAD^^回退两次、HEAD~100回退一百次)；
 	git reset --hard commitId；
@@ -29,6 +29,9 @@
 	rm fileName：然后git rm fileName、git commit-m"descripition"；
 
 关联远程库：
-	git remote add origin git@server-name：path/repo-name.git
-关联后第一次推送master分支的所有内容：git push -u origin master
-此后每次本地提交后推送最新修改：git push origin master
+	git remote add origin git@901901：path/repo-name.git
+	关联后第一次推送master分支的所有内容：git push -u origin master
+	此后每次本地提交后推送最新修改：git push origin master
+
+从远程库克隆：
+	git clone git@github.com:githubName/repositoryName.git
