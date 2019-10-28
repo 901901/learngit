@@ -50,6 +50,4 @@
 	创建+切换分支：git checkout -b branchName 或者 git switch -c branchName
 	合并某分支到当前分支：git merge branchName
 	删除分支：git branch -d branchName
-
-branch feature1
-branch master
+say somthing
