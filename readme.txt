@@ -22,7 +22,7 @@
 
 撤销操作：如果提交到了版本库则可以恢复文件到最新版本、丢失最近一次修改的内容
 	丢弃工作区的修改、回到最近一次git commit或者git add状态
-	git checkout --fileName
+	git checkout --fileName 
 	把暂存区的修改回退到工作区：git reset HEAD fileName
 	
 删除文件：
@@ -35,3 +35,5 @@
 
 从远程库克隆：
 	git clone git@github.com:githubName/repositoryName.git
+	
+say something
