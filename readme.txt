@@ -1,4 +1,11 @@
-﻿添加文件：
+﻿创建版本库
+	$mkdir gitRepositoryName (创建空目录)
+	$cd gitRepositoryName
+	$pwd (显示当期目录)
+	$git init
+	//把创建的目录变成git可以管理的仓库,此时当前目录多一个.git目录,是来跟踪管理版本库的
+	
+添加文件：
 	git add fileName:把文件添加进去-把文件修改添加到stage暂存区；
 	git commit -m "fileDescription":提交更改-把暂存区所有的内容提交到当前分支；
 
@@ -36,4 +43,13 @@
 从远程库克隆：
 	git clone git@github.com:githubName/repositoryName.git
 	
-say something
+使用分支：
+	查看分支：git branch
+	创建分支：git branch branchName
+	切换分支：git checkout branchName 或者 git switch branchName
+	创建+切换分支：git checkout -b branchName 或者 git switch -c branchName
+	合并某分支到当前分支：git merge branchName
+	删除分支：git branch -d branchName
+
+branch feature1
+branch master
