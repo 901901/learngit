@@ -6,7 +6,9 @@
 未关闭当前窗口
 git reset --hard HEAD^(HEAD^^回退两次、HEAD~100回退一百次)；
 git reset --hard "commit id"；
-已关闭当前窗口，重新打开
-git reflog
+已关闭当前窗口，重新打开查看以前记录：git reflog
+
+查看.git目录：.git目录是跟踪管理版本库
+
 git is a distributed version control system.
 git is free software distributed under the GPL.
